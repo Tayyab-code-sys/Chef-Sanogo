@@ -3,515 +3,378 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<title>Chef Sanogo Brahema | Private Chef in Riyadh</title>
+<title>Brahema Sanogo | Corporate Chef · Royal Private Affairs, Riyadh</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 <link rel="apple-touch-icon" href="favicon.svg" />
-<meta name="description" content="Chef Sanogo cooks fresh, tasty food in your home in Riyadh. Private dinners, parties, and events. You enjoy your guests. He does the cooking." />
-<meta property="og:title" content="Chef Sanogo Brahema | Private Chef in Riyadh" />
-<meta property="og:description" content="Fresh food, cooked in your home. Dinners, parties, and events in Riyadh." />
-<meta property="og:type" content="website" />
+<meta name="description" content="Professional profile of Brahema Sanogo, Corporate Chef at Royal Private Affairs, Riyadh. More than 20 years of experience in leading kitchens across Saudi Arabia, the UAE, and Israel. Trained in French cuisine and qualified in nutrition. HACCP certified." />
+<meta property="og:title" content="Brahema Sanogo | Corporate Chef, Royal Private Affairs" />
+<meta property="og:description" content="Professional profile. Over 20 years of experience in leading kitchens across Saudi Arabia, the UAE, and Israel." />
+<meta property="og:type" content="profile" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <style>
   :root{
-    --cream:#f6efe0;--cream-2:#fbf6ec;--paper:#fffdf8;
-    --green:#26331f;--green-2:#33452a;--olive:#5f6f4a;
-    --rust:#c15a34;--rust-2:#a84824;--gold:#d99a34;
-    --ink:#2c2a22;--muted:#736c5c;--muted-2:#cdbfa2;
-    --line:rgba(38,51,31,.14);--radius:18px;
-    --shadow:0 26px 60px -30px rgba(38,51,31,.45);
-    --maxw:1160px;
+    --green:#1e2a1b;--green-2:#16210f;--green-3:#0f180c;
+    --gold:#a6824f;--gold-soft:#bf9c66;--gold-3:#d3b482;
+    --paper:#f7f4ec;--white:#fffdf9;
+    --ink:#282620;--muted:#6c6656;--muted-2:#b4a88d;
+    --cream:#ece5d6;--cream-muted:#ada184;
+    --line:rgba(40,38,32,.12);
+    --sbw:356px;
+    --shadow:0 26px 60px -34px rgba(20,26,16,.5);
   }
   *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
   html{scroll-behavior:smooth;}
-  body{font-family:'DM Sans',system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;overflow-x:hidden;}
+  body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.7;font-size:15px;}
   a{text-decoration:none;color:inherit;}
   img{max-width:100%;display:block;}
-  .wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 22px;}
-  .serif{font-family:'Fraunces',Georgia,serif;}
-  .eyebrow{font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--rust);}
-  .h2{font-family:'Fraunces',Georgia,serif;font-size:clamp(28px,4.6vw,46px);font-weight:600;line-height:1.08;letter-spacing:-.01em;color:var(--green);}
-  .lead{color:var(--muted);font-size:clamp(15px,1.8vw,17px);max-width:600px;}
-
-  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
+  .serif{font-family:'Cormorant Garamond',Georgia,serif;}
+  ::selection{background:rgba(166,130,79,.22);}
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease;}
   .reveal.in{opacity:1;transform:none;}
 
-  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:none;cursor:pointer;
-    font-family:inherit;font-size:14.5px;font-weight:700;padding:15px 26px;border-radius:999px;transition:transform .12s,box-shadow .2s,background .2s;}
-  .btn svg{width:18px;height:18px;}
-  .btn:active{transform:translateY(1px);}
-  .btn--rust{background:var(--rust);color:#fff;box-shadow:0 16px 30px -14px rgba(193,90,52,.9);}
-  .btn--rust:hover{background:var(--rust-2);}
-  .btn--rust svg{fill:#fff;}
-  .btn--out{background:transparent;color:var(--green);border:1.5px solid rgba(38,51,31,.28);}
-  .btn--out:hover{border-color:var(--green);background:rgba(38,51,31,.04);}
-  .btn--out svg{fill:var(--green);}
+  /* ============ SIDEBAR ============ */
+  .sidebar{position:fixed;top:0;left:0;width:var(--sbw);height:100vh;overflow-y:auto;
+    background:linear-gradient(188deg,var(--green),var(--green-2));color:var(--cream);
+    padding:34px 34px 26px;display:flex;flex-direction:column;border-right:1px solid rgba(211,180,130,.16);z-index:40;}
+  .sidebar::-webkit-scrollbar{width:0;}
+  .sb__brand{display:inline-flex;align-items:center;gap:11px;color:#fff;}
+  .sb__brand img{width:34px;height:34px;border-radius:50%;flex:0 0 34px;}
+  .sb__brand span{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-3);font-weight:600;line-height:1.4;}
+  .sb__photo{margin:28px 0 0;position:relative;border-radius:12px;overflow:hidden;border:1px solid rgba(211,180,130,.32);
+    aspect-ratio:4/5;background:var(--green-3);}
+  .sb__photo img{width:100%;height:100%;object-fit:cover;object-position:center 12%;}
+  .sb__name{margin-top:22px;font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:600;color:#fff;line-height:1.02;}
+  .sb__role{margin-top:8px;font-size:10.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-3);}
+  .sb__loc{margin-top:11px;display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--cream-muted);}
+  .sb__loc svg{width:14px;height:14px;fill:var(--gold-soft);}
+  .sb__rule{height:1px;background:rgba(211,180,130,.16);margin:22px 0;}
+  .snav{display:flex;flex-direction:column;}
+  .snav a{display:flex;align-items:center;gap:13px;padding:10px 0;color:var(--cream-muted);font-size:13.5px;font-weight:500;
+    letter-spacing:.02em;border-bottom:1px solid rgba(255,255,255,.055);transition:color .2s,padding .2s;position:relative;}
+  .snav a .n{font-size:11px;font-weight:600;color:var(--gold-soft);width:20px;font-feature-settings:"tnum";transition:color .2s;}
+  .snav a:hover{color:#fff;}
+  .snav a.active{color:#fff;padding-left:8px;}
+  .snav a.active .n{color:var(--gold-3);}
+  .snav a.active::before{content:"";position:absolute;left:-34px;top:50%;transform:translateY(-50%);width:20px;height:2px;background:var(--gold-soft);}
+  .sb__spacer{flex:1;min-height:22px;}
+  .sb__foot{margin-top:24px;}
+  .sb__contactmini{display:flex;gap:10px;}
+  .sb__contactmini a{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:rgba(255,255,255,.05);
+    border:1px solid rgba(211,180,130,.22);transition:.2s;}
+  .sb__contactmini a:hover{background:rgba(211,180,130,.14);}
+  .sb__contactmini svg{width:16px;height:16px;fill:var(--gold-3);}
+  .sb__kingdom{margin-top:16px;font-size:10.5px;color:rgba(173,161,132,.75);letter-spacing:.04em;}
+  .sb__menu{display:none;}
 
-  /* ============ NAV ============ */
-  /* Nav sits plainly at the top and scrolls away. No sticky bar. */
-  header.nav{position:absolute;top:0;left:0;right:0;z-index:50;background:transparent;border-bottom:1px solid transparent;}
-  .nav__inner{display:flex;align-items:center;justify-content:space-between;height:76px;
-    transition:height .35s ease,max-width .35s ease,margin .35s ease,padding .35s ease,background .35s ease,box-shadow .35s ease,border-color .35s ease;
-    border:1px solid transparent;border-radius:0;}
-  /* On scroll: turn into a floating capsule pinned to the top */
-  header.nav.float{position:fixed;animation:capsuleIn .4s ease both;}
-  .nav.float .nav__inner{height:58px;max-width:960px;margin:12px auto;padding:0 12px 0 22px;
-    background:rgba(251,246,236,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
-    border:1px solid var(--line);border-radius:999px;box-shadow:0 20px 44px -22px rgba(38,51,31,.55);}
-  @keyframes capsuleIn{from{transform:translateY(-14px);opacity:0;}to{transform:translateY(0);opacity:1;}}
-  .logo{display:inline-flex;align-items:center;gap:10px;color:var(--green);}
-  .logo svg{width:34px;height:34px;}
-  .logo__txt{display:flex;flex-direction:column;line-height:1;}
-  .logo__txt b{font-family:'Fraunces',serif;font-weight:600;font-size:20px;letter-spacing:.01em;}
-  .logo__txt small{font-size:8.5px;letter-spacing:.28em;color:var(--rust);font-weight:700;margin-top:3px;text-transform:uppercase;}
-  .navlinks{display:flex;align-items:center;gap:30px;}
-  .navlinks a{color:var(--green);font-size:14px;font-weight:600;transition:color .2s;}
-  .navlinks a:hover{color:var(--rust);}
-  .nav__cta{display:inline-flex;align-items:center;gap:8px;background:var(--rust);color:#fff;
-    font-weight:700;font-size:13.5px;padding:11px 20px;border-radius:999px;box-shadow:0 12px 24px -12px rgba(193,90,52,.9);}
-  .nav__cta:hover{background:var(--rust-2);}
-  .nav__cta svg{width:16px;height:16px;fill:#fff;}
-  .nav__toggle{display:none;width:44px;height:44px;border:1px solid var(--line);background:rgba(255,255,255,.4);
-    border-radius:12px;cursor:pointer;padding:0;place-items:center;}
-  .nav__toggle span{display:block;width:20px;height:2px;background:var(--green);border-radius:2px;position:relative;transition:.25s;}
-  .nav__toggle span::before,.nav__toggle span::after{content:"";position:absolute;left:0;width:20px;height:2px;background:var(--green);border-radius:2px;transition:.25s;}
-  .nav__toggle span::before{top:-6px;}
-  .nav__toggle span::after{top:6px;}
-  .nav__toggle.open span{background:transparent;}
-  .nav__toggle.open span::before{top:0;transform:rotate(45deg);}
-  .nav__toggle.open span::after{top:0;transform:rotate(-45deg);}
-  .nav__overlay{display:none;}
-  @media(max-width:840px){
-    .nav__toggle{display:grid;}
-    .navlinks{position:fixed;top:70px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;
-      background:var(--cream-2);border-bottom:1px solid var(--line);
-      padding:8px 18px 20px;box-shadow:0 24px 40px -20px rgba(38,51,31,.35);
-      transform:translateY(-14px);opacity:0;pointer-events:none;transition:transform .25s ease,opacity .25s ease;z-index:60;}
-    .navlinks.open{transform:translateY(0);opacity:1;pointer-events:auto;}
-    .navlinks a{padding:15px 6px;font-size:15px;border-bottom:1px solid var(--line);}
-    .navlinks a:last-of-type{border-bottom:none;}
-    .nav__cta{justify-content:center;margin-top:14px;padding:14px 18px;font-size:15px;}
-    .nav__overlay{display:block;position:fixed;inset:70px 0 0;background:rgba(38,51,31,.35);backdrop-filter:blur(2px);
-      opacity:0;pointer-events:none;transition:opacity .25s;z-index:55;}
-    .nav__overlay.open{opacity:1;pointer-events:auto;}
-  }
+  /* ============ CONTENT ============ */
+  .content{margin-left:var(--sbw);}
+  .inner{max-width:850px;padding:0 62px;margin:0 auto;}
+  .sect{padding:66px 0;border-top:1px solid var(--line);}
+  .sect:first-child{border-top:none;}
+  .sect__label{font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:11px;}
+  .sect__label i{width:22px;height:1px;background:var(--gold);opacity:.5;display:inline-block;font-style:normal;}
+  .sect__title{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,3.3vw,40px);font-weight:600;color:var(--green);margin-top:13px;line-height:1.08;letter-spacing:-.01em;}
+  .sect p{color:var(--muted);font-size:15.5px;line-height:1.78;margin-top:15px;max-width:640px;}
 
-  /* ============ HERO ============ */
-  .hero{position:relative;padding:104px 0 40px;overflow:hidden;background:
-      radial-gradient(760px 520px at 92% 6%,rgba(217,154,52,.16) 0%,transparent 60%),
-      radial-gradient(680px 520px at 2% 98%,rgba(193,90,52,.10) 0%,transparent 60%),
-      var(--cream);}
-  .hero__grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center;position:relative;z-index:2;}
-  .hero h1{margin-top:16px;font-family:'Fraunces',serif;font-size:clamp(40px,6vw,68px);font-weight:600;line-height:1;letter-spacing:-.02em;color:var(--green);}
-  .hero h1 em{font-style:italic;font-weight:500;color:var(--rust);}
-  .hero .lead{margin-top:22px;font-size:clamp(15px,1.9vw,18px);}
-  .hero__ctas{margin-top:30px;display:flex;flex-wrap:wrap;gap:13px;}
-  .hero__trust{margin-top:26px;display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;}
-  .hero__trust span{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--green);}
-  .hero__trust svg{width:17px;height:17px;fill:none;stroke:var(--rust);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;}
+  /* intro */
+  .intro{padding:56px 0 60px;}
+  .intro__emblem{display:flex;align-items:center;gap:13px;margin-bottom:26px;}
+  .intro__emblem img{width:52px;height:52px;border-radius:50%;flex:0 0 52px;}
+  .intro__emblem span{font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);line-height:1.5;}
+  .intro__emblem b{color:var(--green);font-weight:700;}
+  .intro__eyebrow{font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);}
+  .intro h1{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,4.7vw,54px);font-weight:600;color:var(--green);line-height:1.05;letter-spacing:-.015em;margin-top:15px;}
+  .intro h1 em{font-style:italic;color:var(--gold);}
+  .intro p{font-size:16px;max-width:620px;color:var(--muted);}
+  .intro__stats{margin-top:34px;display:flex;gap:44px;flex-wrap:wrap;padding-top:26px;border-top:1px solid var(--line);}
+  .istat b{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:600;color:var(--green);line-height:1;display:block;}
+  .istat span{font-size:12px;color:var(--muted);font-weight:500;margin-top:3px;display:block;}
 
-  /* chef photo */
-  .shot{position:relative;justify-self:center;width:100%;max-width:400px;}
-  .shot__frame{position:relative;border-radius:220px 220px 26px 26px;overflow:hidden;
-    border:8px solid var(--paper);box-shadow:var(--shadow);background:var(--green);aspect-ratio:4/5;}
-  .shot__frame::after{content:"";position:absolute;inset:0;border-radius:212px 212px 20px 20px;
-    box-shadow:inset 0 0 0 2px rgba(217,154,52,.5);pointer-events:none;}
-  .shot__frame img{width:100%;height:100%;object-fit:cover;object-position:center 18%;}
-  .shot__ring{position:absolute;inset:-14px;border-radius:230px 230px 34px 34px;border:1.5px dashed rgba(193,90,52,.4);z-index:-1;}
-  .shot__badge{position:absolute;top:-16px;left:-16px;width:96px;height:96px;border-radius:50%;
-    background:var(--rust);color:#fff;display:grid;place-items:center;text-align:center;transform:rotate(-10deg);
-    box-shadow:0 14px 26px -12px rgba(193,90,52,.9);border:2px solid var(--paper);}
-  .shot__badge b{font-family:'Fraunces',serif;font-size:11px;font-weight:600;line-height:1.25;letter-spacing:.02em;padding:0 8px;}
-  .shot__name{position:absolute;bottom:-18px;right:-10px;background:var(--paper);border:1px solid var(--line);
-    border-radius:16px;padding:12px 18px;box-shadow:0 16px 30px -18px rgba(38,51,31,.5);}
-  .shot__name b{display:block;font-family:'Fraunces',serif;font-weight:600;font-size:17px;color:var(--green);}
-  .shot__name span{font-size:11px;font-weight:600;letter-spacing:.06em;color:var(--rust);text-transform:uppercase;}
-  @media(max-width:900px){.hero__grid{grid-template-columns:1fr;gap:64px;}.shot{margin-top:6px;}}
+  /* career timeline */
+  .tl{margin-top:34px;}
+  .tl__item{position:relative;padding:0 0 30px 32px;border-left:2px solid var(--line);}
+  .tl__item:last-child{border-left-color:transparent;padding-bottom:0;}
+  .tl__dot{position:absolute;left:-8px;top:5px;width:13px;height:13px;border-radius:50%;background:var(--gold);border:3px solid var(--paper);}
+  .tl__yr{font-size:11.5px;font-weight:600;letter-spacing:.07em;color:var(--gold);text-transform:uppercase;}
+  .tl__role{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--green);margin-top:3px;line-height:1.15;}
+  .tl__place{font-size:13px;color:var(--muted);margin-top:3px;font-weight:500;}
+  .tl__note{font-size:13.5px;color:var(--muted);margin-top:8px;max-width:580px;line-height:1.6;}
 
-  /* ============ MARQUEE ============ */
-  .marquee{background:var(--green);color:var(--cream);overflow:hidden;padding:16px 0;border-top:3px solid var(--rust);}
-  .marquee__track{display:flex;gap:0;white-space:nowrap;width:max-content;animation:scroll 26s linear infinite;}
-  .marquee__track span{font-family:'Fraunces',serif;font-style:italic;font-size:19px;font-weight:500;padding:0 26px;display:inline-flex;align-items:center;gap:26px;}
-  .marquee__track span::after{content:"•";color:var(--gold);font-style:normal;}
-  @keyframes scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+  /* expertise */
+  .exp{display:grid;grid-template-columns:1fr 1fr;gap:0 44px;margin-top:32px;}
+  @media(max-width:620px){.exp{grid-template-columns:1fr;}}
+  .eitem{padding:20px 0;border-top:1px solid var(--line);}
+  .eitem h4{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--green);line-height:1.15;}
+  .eitem p{margin-top:5px;font-size:13.5px;color:var(--muted);line-height:1.55;max-width:none;}
+  .tags{margin-top:30px;display:flex;flex-wrap:wrap;gap:9px;}
+  .tag{font-size:13px;font-weight:500;color:var(--green);padding:8px 15px;border:1px solid rgba(166,130,79,.36);border-radius:999px;background:var(--white);}
 
-  /* ============ SERVICES (MENU STYLE) ============ */
-  .menu{padding:80px 0 84px;background:var(--cream);}
-  .menu__head{text-align:center;max-width:640px;margin:0 auto 48px;}
-  .menu__head .h2{margin-top:10px;}
-  .menu__head p{margin-top:12px;color:var(--muted);}
-  .mgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px 48px;}
-  @media(max-width:760px){.mgrid{grid-template-columns:1fr;}}
-  .mrow{display:flex;gap:18px;align-items:flex-start;padding:22px 6px;border-top:1px solid var(--line);transition:.2s;}
-  .mrow:hover{background:var(--cream-2);border-radius:14px;padding-left:16px;padding-right:16px;}
-  .mrow__no{font-family:'Fraunces',serif;font-size:26px;font-weight:600;color:var(--rust);line-height:1;flex:0 0 auto;width:38px;}
-  .mrow__b h4{font-family:'Fraunces',serif;font-size:20px;font-weight:600;color:var(--green);}
-  .mrow__b p{margin-top:5px;font-size:14px;color:var(--muted);line-height:1.55;}
+  /* qualifications */
+  .cred{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:30px;}
+  @media(max-width:620px){.cred{grid-template-columns:1fr;}}
+  .cred__col{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:26px 24px;}
+  .cred__col h3{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;color:var(--green);display:flex;align-items:center;gap:10px;}
+  .cred__col h3 svg{width:19px;height:19px;fill:none;stroke:var(--gold);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+  .cred__list{margin-top:16px;display:flex;flex-direction:column;gap:13px;}
+  .credit{display:flex;gap:11px;align-items:flex-start;}
+  .credit__ic{flex:0 0 18px;height:18px;border-radius:5px;display:grid;place-items:center;margin-top:3px;background:rgba(166,130,79,.13);border:1px solid rgba(166,130,79,.28);}
+  .credit__ic svg{width:10px;height:10px;stroke:var(--gold);fill:none;stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round;}
+  .credit b{font-size:13.5px;font-weight:600;color:var(--ink);display:block;line-height:1.35;}
+  .credit span{font-size:12.5px;color:var(--muted);}
+  .langs{margin-top:22px;font-size:13.5px;color:var(--muted);}
+  .langs b{color:var(--green);font-weight:600;}
 
-  /* ============ HOW IT WORKS ============ */
-  .how{padding:80px 0;background:var(--green);color:var(--cream);position:relative;}
-  .how__head{text-align:center;max-width:620px;margin:0 auto 46px;}
-  .how__head .eyebrow{color:var(--gold);}
-  .how__head .h2{color:var(--cream);margin-top:10px;}
-  .how__head p{margin-top:12px;color:rgba(246,239,224,.7);}
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
-  @media(max-width:760px){.steps{grid-template-columns:1fr;gap:18px;}}
-  .step{background:rgba(255,255,255,.05);border:1px solid rgba(217,154,52,.25);border-radius:20px;padding:30px 26px;text-align:center;}
-  .step__no{width:60px;height:60px;margin:0 auto 18px;border-radius:50%;background:var(--rust);color:#fff;
-    font-family:'Fraunces',serif;font-size:26px;font-weight:600;display:grid;place-items:center;box-shadow:0 12px 24px -12px rgba(193,90,52,.9);}
-  .step h4{font-family:'Fraunces',serif;font-size:20px;font-weight:600;color:var(--cream);}
-  .step p{margin-top:8px;font-size:14px;color:rgba(246,239,224,.75);line-height:1.55;}
-
-  /* ============ ABOUT ============ */
-  .about{padding:84px 0;background:var(--cream);}
-  .about__grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:52px;align-items:center;}
-  @media(max-width:860px){.about__grid{grid-template-columns:1fr;gap:40px;}}
-  .about__ph{position:relative;justify-self:center;width:100%;max-width:360px;}
-  .about__ph img{width:100%;aspect-ratio:1;object-fit:cover;object-position:center 16%;border-radius:24px;
-    border:8px solid var(--paper);box-shadow:var(--shadow);}
-  .about__ph::before{content:"";position:absolute;inset:auto -14px -14px auto;width:70%;height:70%;
-    border:1.5px dashed rgba(193,90,52,.45);border-radius:24px;z-index:-1;}
-  .about__b .h2{margin-top:10px;}
-  .about__b p{margin-top:16px;color:var(--muted);font-size:15.5px;line-height:1.7;max-width:520px;}
-  .about__sign{margin-top:18px;font-family:'Fraunces',serif;font-style:italic;font-size:26px;color:var(--green);}
-  .about__b .hero__ctas{margin-top:24px;}
-
-  /* ============ FLAVORS MENU ============ */
-  .flav{padding:0 0 90px;background:var(--cream);}
-  .flav__card{position:relative;background:var(--green);border-radius:28px;padding:52px 44px;color:var(--cream);
-    box-shadow:var(--shadow);overflow:hidden;}
-  .flav__card::before{content:"";position:absolute;inset:14px;border:1.5px solid rgba(217,154,52,.3);border-radius:20px;pointer-events:none;}
-  .flav__head{text-align:center;max-width:560px;margin:0 auto 38px;position:relative;}
-  .flav__head .eyebrow{color:var(--gold);}
-  .flav__head h2{font-family:'Fraunces',serif;font-size:clamp(26px,4vw,40px);font-weight:600;color:var(--cream);margin-top:8px;}
-  .flav__head p{margin-top:10px;color:rgba(246,239,224,.72);font-size:14.5px;}
-  .flist{display:grid;grid-template-columns:1fr 1fr;gap:6px 54px;position:relative;}
-  @media(max-width:720px){.flist{grid-template-columns:1fr;}.flav__card{padding:40px 26px;}}
-  .fitem{display:flex;align-items:baseline;gap:10px;padding:14px 0;border-bottom:1px dashed rgba(217,154,52,.28);}
-  .fitem b{font-family:'Fraunces',serif;font-size:18px;font-weight:600;color:var(--cream);white-space:nowrap;}
-  .fitem .dots{flex:1;border-bottom:1px dotted rgba(246,239,224,.35);transform:translateY(-4px);}
-  .fitem span{font-size:12.5px;color:var(--gold);font-weight:600;white-space:nowrap;letter-spacing:.02em;}
-
-  /* ============ CONTACT + QR ============ */
-  .contact{padding:82px 0 20px;background:var(--cream-2);}
-  .contact__grid{display:grid;grid-template-columns:1fr .9fr;gap:44px;align-items:stretch;}
-  @media(max-width:900px){.contact__grid{grid-template-columns:1fr;gap:34px;}}
-  .contact__head .h2{margin-top:10px;}
-  .contact__head p{margin-top:12px;color:var(--muted);max-width:460px;}
-  .clist{margin-top:26px;display:flex;flex-direction:column;gap:11px;}
-  .crow{display:flex;align-items:center;gap:15px;padding:15px 18px;background:var(--paper);border:1px solid var(--line);border-radius:15px;
-    transition:transform .18s,box-shadow .18s;box-shadow:0 12px 26px -24px rgba(38,51,31,.5);}
-  .crow:hover{transform:translateY(-2px);box-shadow:0 18px 32px -22px rgba(38,51,31,.5);}
-  .crow__ic{flex:0 0 44px;height:44px;border-radius:50%;background:rgba(193,90,52,.12);display:grid;place-items:center;}
-  .crow__ic svg{width:19px;height:19px;fill:var(--rust);}
-  .crow__t{display:flex;flex-direction:column;line-height:1.3;}
-  .crow__l{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:700;}
-  .crow__v{font-size:15px;font-weight:700;color:var(--green);word-break:break-word;}
-
-  .qrpanel{background:var(--green);border-radius:26px;padding:38px 30px;color:var(--cream);text-align:center;
-    box-shadow:var(--shadow);position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;}
-  .qrpanel::before{content:"";position:absolute;inset:12px;border:1.5px solid rgba(217,154,52,.3);border-radius:18px;pointer-events:none;}
-  .qrpanel .eyebrow{color:var(--gold);position:relative;}
-  .qrpanel h3{font-family:'Fraunces',serif;margin-top:8px;font-size:24px;font-weight:600;position:relative;}
-  .qrpanel p{margin-top:8px;font-size:12.5px;color:rgba(246,239,224,.72);max-width:250px;position:relative;}
-  .qrwrap{margin:22px auto 0;width:216px;max-width:70vw;aspect-ratio:1;background:#fff;border-radius:18px;display:grid;place-items:center;
-    padding:14px;position:relative;box-shadow:0 18px 36px -16px rgba(0,0,0,.5);}
-  .corner{position:absolute;width:15px;height:15px;border:3px solid var(--rust);}
+  /* contact */
+  .contact__wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:32px;margin-top:32px;align-items:start;}
+  @media(max-width:760px){.contact__wrap{grid-template-columns:1fr;}}
+  .clist{display:flex;flex-direction:column;gap:9px;}
+  .crow{display:flex;align-items:center;gap:14px;padding:13px 16px;background:var(--white);border:1px solid var(--line);border-radius:12px;transition:.18s;}
+  .crow:hover{border-color:rgba(166,130,79,.4);}
+  .crow__ic{flex:0 0 38px;height:38px;border-radius:50%;background:var(--green);display:grid;place-items:center;}
+  .crow__ic svg{width:16px;height:16px;fill:var(--gold-3);}
+  .crow__l{font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:600;}
+  .crow__v{font-size:14px;font-weight:600;color:var(--green);word-break:break-word;}
+  .qrpanel{background:linear-gradient(165deg,var(--green),var(--green-3));border-radius:16px;padding:28px 24px;color:var(--cream);text-align:center;position:relative;box-shadow:var(--shadow);}
+  .qrpanel::before{content:"";position:absolute;inset:9px;border:1px solid rgba(211,180,130,.28);border-radius:10px;pointer-events:none;}
+  .qrpanel h3{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;position:relative;}
+  .qrpanel p{font-size:11.5px;color:rgba(211,180,130,.8);margin-top:5px;position:relative;}
+  .qrwrap{margin:16px auto 0;width:176px;max-width:60vw;aspect-ratio:1;background:#fff;border-radius:12px;display:grid;place-items:center;padding:12px;position:relative;box-shadow:0 16px 30px -16px rgba(0,0,0,.5);}
+  .corner{position:absolute;width:13px;height:13px;border:3px solid var(--gold);}
   .corner.tl{top:-3px;left:-3px;border-right:0;border-bottom:0;border-radius:6px 0 0 0;}
   .corner.tr{top:-3px;right:-3px;border-left:0;border-bottom:0;border-radius:0 6px 0 0;}
   .corner.bl{bottom:-3px;left:-3px;border-right:0;border-top:0;border-radius:0 0 0 6px;}
   .corner.br{bottom:-3px;right:-3px;border-left:0;border-top:0;border-radius:0 0 6px 0;}
   #qr{width:100%;height:100%;display:grid;place-items:center;}
   #qr canvas,#qr img{width:100%!important;height:100%!important;border-radius:4px;}
-  .qrpanel .hint{margin-top:15px;font-size:12px;color:var(--cream);display:inline-flex;align-items:center;gap:8px;font-weight:600;position:relative;}
-  .qrpanel .hint svg{width:15px;height:15px;fill:var(--gold);}
-  .qrpanel .openlink{margin-top:16px;display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:#fff;
-    background:var(--rust);padding:12px 22px;border-radius:999px;position:relative;}
-  .qrpanel .openlink:hover{background:var(--rust-2);}
-  .qrpanel .openlink svg{width:16px;height:16px;fill:#fff;}
+  .qrpanel .openlink{margin-top:15px;display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:var(--cream);position:relative;border-bottom:1px solid rgba(211,180,130,.5);padding-bottom:2px;}
+  .qrpanel .openlink svg{width:13px;height:13px;fill:var(--gold-3);}
 
-  /* ============ FOOTER ============ */
-  footer{background:var(--green);color:var(--cream);padding:48px 0 34px;margin-top:64px;}
-  .foot__grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:center;}
-  .foot__brand .logo{color:var(--cream);}
-  .foot__brand .logo__txt b{color:var(--cream);}
-  .foot__brand p{margin-top:10px;font-family:'Fraunces',serif;font-style:italic;font-size:15px;color:rgba(246,239,224,.72);}
-  .foot__links{display:flex;gap:13px;}
-  .foot__links a{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(217,154,52,.3);transition:.2s;}
-  .foot__links a:hover{background:rgba(217,154,52,.16);}
-  .foot__links svg{width:18px;height:18px;fill:var(--gold);}
-  .foot__bottom{margin-top:30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);text-align:center;font-size:11.5px;color:rgba(246,239,224,.6);letter-spacing:.03em;}
+  .foot{border-top:1px solid var(--line);padding:28px 0 44px;margin-top:6px;}
+  .foot p{font-size:12px;color:var(--muted);letter-spacing:.02em;}
 
-  .toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);background:var(--green);color:#fff;
-    padding:12px 20px;border-radius:12px;font-size:13px;font-weight:600;box-shadow:var(--shadow);opacity:0;pointer-events:none;
-    transition:.25s;z-index:80;border:1px solid rgba(217,154,52,.4);}
-  .toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+  /* ============ RESPONSIVE ============ */
+  @media(max-width:980px){
+    :root{--sbw:0px;}
+    .sidebar{position:static;width:100%;height:auto;flex-direction:column;padding:20px 22px 24px;border-right:none;border-bottom:1px solid rgba(211,180,130,.2);}
+    .sb__topbar{display:flex;align-items:center;justify-content:space-between;}
+    .sb__photo{display:none;}
+    .sb__name{margin-top:0;font-size:23px;}
+    .sb__id{display:flex;align-items:center;gap:13px;}
+    .sb__loc,.sb__rule,.sb__spacer,.sb__kingdom{display:none;}
+    .snav{max-height:0;overflow:hidden;transition:max-height .3s ease;}
+    .snav.open{max-height:360px;margin-top:12px;}
+    .snav a.active::before{display:none;}
+    .snav a.active{padding-left:0;}
+    .sb__foot{margin-top:14px;}
+    .sb__menu{display:grid;width:44px;height:44px;border:1px solid rgba(211,180,130,.3);background:rgba(255,255,255,.05);border-radius:11px;cursor:pointer;place-items:center;padding:0;}
+    .sb__menu span{display:block;width:20px;height:2px;background:var(--gold-3);border-radius:2px;position:relative;transition:.25s;}
+    .sb__menu span::before,.sb__menu span::after{content:"";position:absolute;left:0;width:20px;height:2px;background:var(--gold-3);border-radius:2px;transition:.25s;}
+    .sb__menu span::before{top:-6px;}.sb__menu span::after{top:6px;}
+    .sb__menu.open span{background:transparent;}
+    .sb__menu.open span::before{top:0;transform:rotate(45deg);}
+    .sb__menu.open span::after{top:0;transform:rotate(-45deg);}
+    .content{margin-left:0;}
+    .inner{padding:0 26px;}
+    .sb__mini{width:44px;height:44px;border-radius:10px;overflow:hidden;border:1px solid rgba(211,180,130,.35);flex:0 0 44px;}
+    .sb__mini img{width:100%;height:100%;object-fit:cover;object-position:center 12%;}
+  }
+  @media(min-width:981px){.sb__topbar{display:contents;}.sb__mini{display:none;}.sb__id{display:contents;}}
 </style>
 </head>
 <body>
 
-  <!-- NAV -->
-  <header class="nav">
-    <div class="wrap nav__inner">
-      <a href="#top" class="logo">
-        <svg viewBox="0 0 40 40"><rect width="40" height="40" rx="11" fill="#26331f"/><path d="M13 20a5 5 0 1 1 1.9-9.6 5.6 5.6 0 0 1 10.2 0A5 5 0 1 1 27 20v2H13z" fill="#d99a34"/><rect x="13" y="22" width="14" height="7" rx="1.5" fill="#c15a34"/><path d="M17 24v3M20 24v3M23 24v3" stroke="#26331f" stroke-width="1.4" stroke-linecap="round"/></svg>
-        <span class="logo__txt"><b>Chef Sanogo</b><small>Private Chef</small></span>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sb__topbar">
+      <a href="#top" class="sb__brand">
+        <img src="emblem.png" alt="Emblem of the Kingdom of Saudi Arabia" />
+        <span>Royal Private<br>Affairs</span>
       </a>
-      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span></button>
-      <nav class="navlinks" id="navLinks">
-        <a href="#menu">What I Cook</a>
-        <a href="#how">How It Works</a>
-        <a href="#about">About Me</a>
-        <a href="#contact">Contact</a>
-        <a class="nav__cta" href="https://wa.me/966563111981" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.5 15.3L2 22l4.8-1.5A10 10 0 1012 2zm0 2a8 8 0 11-4.2 14.8l-.3-.2-2.5.8.8-2.4-.2-.3A8 8 0 0112 4zm4.3 10.6c-.2-.1-1.3-.7-1.5-.7-.2-.1-.3-.1-.5.1s-.5.7-.7.8c-.1.2-.2.2-.4.1a6.5 6.5 0 01-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4 0-.1-.5-1.2-.6-1.6-.2-.4-.4-.4-.5-.4h-.5c-.1 0-.4.1-.6.3-.2.3-.8.8-.8 1.9s.8 2.2.9 2.4c.1.1 1.6 2.5 4 3.4 1.4.6 2 .7 2.6.6.4 0 1.3-.5 1.5-1 .2-.6.2-1 .1-1.1z"/></svg>
-          Book a Dinner
-        </a>
-      </nav>
+      <button class="sb__menu" id="sbMenu" aria-label="Open menu" aria-expanded="false"><span></span></button>
     </div>
-    <div class="nav__overlay" id="navOverlay"></div>
-  </header>
 
-  <!-- HERO -->
-  <section id="top" class="hero">
-    <div class="wrap hero__grid">
-      <div class="reveal">
-        <span class="eyebrow">Private Chef in Riyadh</span>
-        <h1>Good food, cooked in <em>your own home.</em></h1>
-        <p class="lead">Hi, I am Chef Sanogo. I cook fresh, tasty meals for your dinners and parties. You sit with your guests and have fun. I do all the cooking. Then I clean up too.</p>
-        <div class="hero__ctas">
-          <a class="btn btn--rust" href="https://wa.me/966563111981" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.5 15.3L2 22l4.8-1.5A10 10 0 1012 2zm4.3 12.6c-.2-.1-1.3-.7-1.5-.7-.2-.1-.3-.1-.5.1s-.5.7-.7.8c-.1.2-.2.2-.4.1a6.5 6.5 0 01-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4 0-.1-.5-1.2-.6-1.6-.2-.4-.4-.4-.5-.4h-.5c-.1 0-.4.1-.6.3-.2.3-.8.8-.8 1.9s.8 2.2.9 2.4c.1.1 1.6 2.5 4 3.4 1.4.6 2 .7 2.6.6.4 0 1.3-.5 1.5-1 .2-.6.2-1 .1-1.1z"/></svg>
-            Book a Dinner
-          </a>
-          <a class="btn btn--out" href="#contact">
-            <svg viewBox="0 0 24 24"><path d="M17 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V7l-4-4zm-5 16a3 3 0 110-6 3 3 0 010 6zm3-10H6V5h9v4z"/></svg>
-            Save My Number
-          </a>
+    <div class="sb__photo">
+      <img src="chef.jpg" alt="Brahema Sanogo" onerror="this.parentElement.style.display='none'" />
+    </div>
+
+    <div class="sb__id">
+      <span class="sb__mini"><img src="chef.jpg" alt="" /></span>
+      <div>
+        <div class="sb__name">Brahema Sanogo</div>
+        <div class="sb__role">Corporate Chef</div>
+      </div>
+    </div>
+    <div class="sb__loc"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>Riyadh, Saudi Arabia</div>
+
+    <div class="sb__rule"></div>
+
+    <nav class="snav" id="snav">
+      <a href="#intro" data-sec="intro"><span class="n">01</span> Profile</a>
+      <a href="#experience" data-sec="experience"><span class="n">02</span> Career History</a>
+      <a href="#expertise" data-sec="expertise"><span class="n">03</span> Areas of Expertise</a>
+      <a href="#qualifications" data-sec="qualifications"><span class="n">04</span> Qualifications</a>
+      <a href="#contact" data-sec="contact"><span class="n">05</span> Contact</a>
+    </nav>
+
+    <div class="sb__spacer"></div>
+
+    <div class="sb__foot">
+      <div class="sb__contactmini">
+        <a href="mailto:bsanogo@rpa.gov.sa" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm8 7L4 6.5V6l8 4.5L20 6v.5L12 11z"/></svg></a>
+        <a href="tel:+966563111981" aria-label="Telephone"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"/></svg></a>
+      </div>
+      <div class="sb__kingdom">Kingdom of Saudi Arabia</div>
+    </div>
+  </aside>
+
+  <!-- CONTENT -->
+  <main class="content">
+    <div class="inner">
+
+      <!-- PROFILE -->
+      <section id="intro" class="intro" style="scroll-margin-top:20px;">
+        <div class="intro__emblem reveal">
+          <img src="emblem.png" alt="Emblem of the Kingdom of Saudi Arabia" />
+          <span><b>Royal Private Affairs</b><br>Kingdom of Saudi Arabia</span>
         </div>
-        <div class="hero__trust">
-          <span><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg>Fresh every time</span>
-          <span><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg>Halal food</span>
-          <span><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg>Made just for you</span>
+        <span class="intro__eyebrow">Professional Profile</span>
+        <h1>Over 20 years in <em>professional kitchens.</em></h1>
+        <p>Brahema Sanogo is a Corporate Chef at Royal Private Affairs in Riyadh. Since 2006 he has worked in leading kitchens across Saudi Arabia, the United Arab Emirates, and Israel, holding roles from Commis to Head Chef. Trained in French cuisine and qualified in nutrition, he has extensive knowledge of Italian, European, Mediterranean, and Arabic cuisine, and experience in menu development, healthy dishes, and the management of professional kitchen teams and formal functions.</p>
+        <div class="intro__stats">
+          <div class="istat"><b>20+</b><span>Years of experience</span></div>
+          <div class="istat"><b>3</b><span>Countries</span></div>
+          <div class="istat"><b>2006</b><span>In the profession since</span></div>
         </div>
-      </div>
+      </section>
 
-      <div class="shot reveal">
-        <span class="shot__ring"></span>
-        <div class="shot__frame">
-          <img src="chef.jpg" alt="Chef Sanogo Brahema" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'SB',style:'color:#f6efe0;font-family:Fraunces,serif;font-size:70px;display:grid;place-items:center;height:100%'}))" />
+      <!-- CAREER HISTORY -->
+      <section id="experience" class="sect" style="scroll-margin-top:20px;">
+        <div class="sect__label reveal"><i></i> 02 · Career History</div>
+        <h2 class="sect__title reveal">Experience</h2>
+        <p class="reveal">A career built across fine-dining restaurants, hotels, and private service, spanning more than two decades in Saudi Arabia, the United Arab Emirates, and Israel.</p>
+        <div class="tl">
+          <div class="tl__item reveal"><span class="tl__dot"></span><div class="tl__yr">2019 — Present</div><div class="tl__role">Private Chef &amp; French Specialty Chef</div><div class="tl__place">Royal Private Affairs · Riyadh, Saudi Arabia</div><div class="tl__note">Menu development and healthy dishes. Supervision of the kitchen and the cold kitchen, buffet setup, and food safety, in line with client dietary requirements.</div></div>
+          <div class="tl__item reveal"><span class="tl__dot"></span><div class="tl__yr">2017 — 2019</div><div class="tl__role">Head Chef</div><div class="tl__place">La Serre Bistro &amp; Boulangerie (French) · Downtown Dubai, UAE</div><div class="tl__note">Full charge of the boulangerie. Menu development, work scheduling, staff training, and maintaining hygiene, discipline, and quality across the kitchen.</div></div>
+          <div class="tl__item reveal"><span class="tl__dot"></span><div class="tl__yr">2016 — 2017</div><div class="tl__role">Head Chef</div><div class="tl__place">Noir VIP Lounge · Kempinski, Mall of the Emirates, Dubai, UAE</div></div>
+          <div class="tl__item reveal"><span class="tl__dot"></span><div class="tl__yr">2015 — 2016</div><div class="tl__role">Sous Chef</div><div class="tl__place">Pacha / Frioul (French) · Madinat Jumeirah, Dubai, UAE</div></div>
+          <div class="tl__item reveal"><span class="tl__dot"></span><div class="tl__yr">2013 — 2015</div><div class="tl__role">Junior Sous Chef</div><div class="tl__place">La Serre Bistro &amp; Boulangerie (French) · Downtown Dubai, UAE</div></div>
+          <div class="tl__item reveal"><span class="tl__dot"></span><div class="tl__yr">2006 — 2011</div><div class="tl__role">Commis to Chef de Partie</div><div class="tl__place">Tel Aviv, Israel</div><div class="tl__note">Progressed from kitchen helper and commis to demi chef and chef de partie.</div></div>
         </div>
-        <span class="shot__badge"><b>Royal Private Affairs</b></span>
-        <div class="shot__name"><b>Sanogo Brahema</b><span>Corporate Chef</span></div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- MARQUEE -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee__track">
-      <span>French Food</span><span>West African</span><span>Grills &amp; Roasts</span><span>Fresh Seafood</span><span>Middle Eastern</span><span>Sweet Desserts</span>
-      <span>French Food</span><span>West African</span><span>Grills &amp; Roasts</span><span>Fresh Seafood</span><span>Middle Eastern</span><span>Sweet Desserts</span>
-    </div>
-  </div>
-
-  <!-- SERVICES / MENU -->
-  <section id="menu" class="menu">
-    <div class="wrap">
-      <div class="menu__head reveal">
-        <span class="eyebrow">What I Cook For You</span>
-        <h2 class="h2">The Ways I Can Help</h2>
-        <p>One chef for your dinner, your party, or your event. Pick what you need.</p>
-      </div>
-      <div class="mgrid">
-        <div class="mrow reveal"><div class="mrow__no">01</div><div class="mrow__b"><h4>Dinners at Home</h4><p>I cook a full meal in your kitchen. You and your guests just eat and enjoy.</p></div></div>
-        <div class="mrow reveal"><div class="mrow__no">02</div><div class="mrow__b"><h4>Food for Parties</h4><p>Big party or work event? I can cook for a few people or a large crowd.</p></div></div>
-        <div class="mrow reveal"><div class="mrow__no">03</div><div class="mrow__b"><h4>Your Own Menu</h4><p>Tell me what you like. I make a menu just for you and your guests.</p></div></div>
-        <div class="mrow reveal"><div class="mrow__no">04</div><div class="mrow__b"><h4>VIP and Royal Meals</h4><p>I cook for royal and top guests. Your food and service will be first class.</p></div></div>
-        <div class="mrow reveal"><div class="mrow__no">05</div><div class="mrow__b"><h4>Cook in Front of Guests</h4><p>Watch me cook your food live at the table. It is fun to see and fun to eat.</p></div></div>
-        <div class="mrow reveal"><div class="mrow__no">06</div><div class="mrow__b"><h4>Food From Many Lands</h4><p>French, African, and Arab food. All fresh, warm, and full of taste.</p></div></div>
-        <div class="mrow reveal"><div class="mrow__no">07</div><div class="mrow__b"><h4>Help for Your Kitchen</h4><p>I help cafes and cooks with menus, kitchen setup, and staff training.</p></div></div>
-        <div class="mrow reveal"><div class="mrow__no">08</div><div class="mrow__b"><h4>Sweets and Desserts</h4><p>I make small treats and pretty desserts to end your meal on a high note.</p></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section id="how" class="how">
-    <div class="wrap">
-      <div class="how__head reveal">
-        <span class="eyebrow">Easy From Start To End</span>
-        <h2 class="h2">How It Works</h2>
-        <p>Just three easy steps. You do very little. I do the rest.</p>
-      </div>
-      <div class="steps">
-        <div class="step reveal"><div class="step__no">1</div><h4>Tell Me Your Plan</h4><p>Send me the day, how many guests, and the food you like.</p></div>
-        <div class="step reveal"><div class="step__no">2</div><h4>I Plan the Menu</h4><p>I pick fresh food and make a menu you and your guests will love.</p></div>
-        <div class="step reveal"><div class="step__no">3</div><h4>I Cook, You Enjoy</h4><p>I cook it all fresh in your home. You have fun. Then I clean up.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="about">
-    <div class="wrap about__grid">
-      <div class="about__ph reveal">
-        <img src="chef.jpg" alt="Chef Sanogo Brahema" onerror="this.style.display='none'" />
-      </div>
-      <div class="about__b reveal">
-        <span class="eyebrow">Say Hello</span>
-        <h2 class="h2">Meet Chef Sanogo</h2>
-        <p>I am Sanogo Brahema. I am a chef here in Riyadh. I cook for Royal Private Affairs, so I know how to make food that looks and tastes its best.</p>
-        <p>I have cooked for many big dinners and happy guests. I love good food. And I love to see people smile at the table. Let me cook for your next dinner.</p>
-        <div class="about__sign">Chef Sanogo</div>
-        <div class="hero__ctas">
-          <a class="btn btn--rust" href="https://wa.me/966563111981" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.5 15.3L2 22l4.8-1.5A10 10 0 1012 2zm4.3 12.6c-.2-.1-1.3-.7-1.5-.7-.2-.1-.3-.1-.5.1s-.5.7-.7.8c-.1.2-.2.2-.4.1a6.5 6.5 0 01-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4 0-.1-.5-1.2-.6-1.6-.2-.4-.4-.4-.5-.4h-.5c-.1 0-.4.1-.6.3-.2.3-.8.8-.8 1.9s.8 2.2.9 2.4c.1.1 1.6 2.5 4 3.4 1.4.6 2 .7 2.6.6.4 0 1.3-.5 1.5-1 .2-.6.2-1 .1-1.1z"/></svg>
-            Say Hi on WhatsApp
-          </a>
+      <!-- AREAS OF EXPERTISE -->
+      <section id="expertise" class="sect" style="scroll-margin-top:20px;">
+        <div class="sect__label reveal"><i></i> 03 · Areas of Expertise</div>
+        <h2 class="sect__title reveal">Professional expertise</h2>
+        <div class="exp">
+          <div class="eitem reveal"><h4>International Cuisine</h4><p>Extensive knowledge of Italian, French, Mediterranean, European, and Arabic cuisine.</p></div>
+          <div class="eitem reveal"><h4>Menu Development</h4><p>Designs general and seasonal menus, including healthy and dietary-specific dishes.</p></div>
+          <div class="eitem reveal"><h4>Nutrition</h4><p>Qualified nutritionist, with a focus on healthy, organic, and seasonal cooking.</p></div>
+          <div class="eitem reveal"><h4>Kitchen Management</h4><p>Supervises kitchen operations, including the cold kitchen and buffet service.</p></div>
+          <div class="eitem reveal"><h4>Team Leadership</h4><p>Leads, organises, schedules, and trains professional kitchen teams.</p></div>
+          <div class="eitem reveal"><h4>Food Safety</h4><p>Maintains HACCP hygiene and food-safety standards throughout the kitchen.</p></div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FLAVORS MENU -->
-  <section class="flav">
-    <div class="wrap">
-      <div class="flav__card reveal">
-        <div class="flav__head">
-          <span class="eyebrow">A Taste of My Food</span>
-          <h2>Flavors I Cook</h2>
-          <p>Here are some of the foods I make. Ask me for more. I cook to fit your taste.</p>
+        <div class="tags reveal">
+          <span class="tag">Italian</span>
+          <span class="tag">French</span>
+          <span class="tag">Mediterranean</span>
+          <span class="tag">European</span>
+          <span class="tag">Arabic</span>
+          <span class="tag">Nutrition</span>
+          <span class="tag">Healthy &amp; Organic</span>
+          <span class="tag">Seasonal Menus</span>
         </div>
-        <div class="flist">
-          <div class="fitem"><b>French Dishes</b><span class="dots"></span><span>rich &amp; warm</span></div>
-          <div class="fitem"><b>West African</b><span class="dots"></span><span>bold &amp; homey</span></div>
-          <div class="fitem"><b>Arab &amp; Levantine</b><span class="dots"></span><span>fresh mezze</span></div>
-          <div class="fitem"><b>Grills &amp; Roasts</b><span class="dots"></span><span>smoky</span></div>
-          <div class="fitem"><b>Fresh Seafood</b><span class="dots"></span><span>light</span></div>
-          <div class="fitem"><b>Prime Meats</b><span class="dots"></span><span>juicy</span></div>
-          <div class="fitem"><b>Small Bites</b><span class="dots"></span><span>for parties</span></div>
-          <div class="fitem"><b>Sweet Desserts</b><span class="dots"></span><span>pretty &amp; sweet</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- CONTACT + QR -->
-  <section id="contact" class="contact">
-    <div class="wrap contact__grid">
-      <div class="contact__head reveal">
-        <span class="eyebrow">Get In Touch</span>
-        <h2 class="h2">Let's Plan Your Dinner</h2>
-        <p>Tell me the day, the guests, and the food you like. I will take care of the rest. Or scan the code to save my number in one tap.</p>
-        <div class="clist">
-          <a class="crow" href="tel:+966563111981">
-            <span class="crow__ic"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"/></svg></span>
-            <span class="crow__t"><span class="crow__l">Phone / WhatsApp</span><span class="crow__v">+966 56 311 1981</span></span>
-          </a>
-          <a class="crow" href="tel:+33605731255">
-            <span class="crow__ic"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"/></svg></span>
-            <span class="crow__t"><span class="crow__l">France</span><span class="crow__v">+33 6 05 73 12 55</span></span>
-          </a>
-          <a class="crow" href="mailto:bsanogo@rpa.gov.sa">
-            <span class="crow__ic"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm8 7L4 6.5V6l8 4.5L20 6v.5L12 11z"/></svg></span>
-            <span class="crow__t"><span class="crow__l">Work Email</span><span class="crow__v">bsanogo@rpa.gov.sa</span></span>
-          </a>
-          <a class="crow" href="mailto:b.sanogo19@gmail.com">
-            <span class="crow__ic"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm8 7L4 6.5V6l8 4.5L20 6v.5L12 11z"/></svg></span>
-            <span class="crow__t"><span class="crow__l">Email</span><span class="crow__v">b.sanogo19@gmail.com</span></span>
-          </a>
-          <a class="crow" href="https://instagram.com/chef_sanogo_b" target="_blank" rel="noopener">
-            <span class="crow__ic"><svg viewBox="0 0 24 24"><path d="M12 2c2.7 0 3 0 4.1.1 1 0 1.7.2 2.3.5.6.2 1.1.5 1.6 1s.8 1 1 1.6c.3.6.4 1.3.5 2.3.1 1.1.1 1.4.1 4.1s0 3-.1 4.1c0 1-.2 1.7-.5 2.3-.2.6-.5 1.1-1 1.6s-1 .8-1.6 1c-.6.3-1.3.4-2.3.5-1.1.1-1.4.1-4.1.1s-3 0-4.1-.1c-1 0-1.7-.2-2.3-.5-.6-.2-1.1-.5-1.6-1s-.8-1-1-1.6c-.3-.6-.4-1.3-.5-2.3C2.4 15 2.4 14.7 2.4 12s0-3 .1-4.1c0-1 .2-1.7.5-2.3.2-.6.5-1.1 1-1.6s1-.8 1.6-1c.6-.3 1.3-.4 2.3-.5C9 2 9.3 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zM17.8 6.9a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/></svg></span>
-            <span class="crow__t"><span class="crow__l">Instagram</span><span class="crow__v">@chef_sanogo_b</span></span>
-          </a>
-          <div class="crow">
-            <span class="crow__ic"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg></span>
-            <span class="crow__t"><span class="crow__l">Where I Cook</span><span class="crow__v">Riyadh, Saudi Arabia</span></span>
+      <!-- QUALIFICATIONS -->
+      <section id="qualifications" class="sect" style="scroll-margin-top:20px;">
+        <div class="sect__label reveal"><i></i> 04 · Trained &amp; Qualified</div>
+        <h2 class="sect__title reveal">Qualifications</h2>
+        <div class="cred">
+          <div class="cred__col reveal">
+            <h3><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>Certificates &amp; Training</h3>
+            <div class="cred__list">
+              <div class="credit"><span class="credit__ic"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></span><div><b>HACCP Food Safety</b><span>Dubai Municipality</span></div></div>
+              <div class="credit"><span class="credit__ic"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></span><div><b>Diploma in Nutrition</b><span>Health Academy, Australia</span></div></div>
+              <div class="credit"><span class="credit__ic"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></span><div><b>Dubai Way</b><span>Dubai Tourism</span></div></div>
+            </div>
+          </div>
+          <div class="cred__col reveal">
+            <h3><svg viewBox="0 0 24 24"><path d="M3 8l9-4 9 4-9 4-9-4z"/><path d="M6 10v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg>Education</h3>
+            <div class="cred__list">
+              <div class="credit"><span class="credit__ic"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></span><div><b>Fundamental &amp; Applied Sciences</b><span>University of Abobo-Adjamé</span></div></div>
+              <div class="credit"><span class="credit__ic"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></span><div><b>Advanced Level, Sciences</b><span>Scientific School, Yamoussoukro</span></div></div>
+              <div class="credit"><span class="credit__ic"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></span><div><b>Diploma in Nutrition</b><span>Health Academy, Australia</span></div></div>
+            </div>
           </div>
         </div>
-      </div>
+        <div class="langs reveal"><b>Languages:</b> French (native) and English.</div>
+      </section>
 
-      <div class="qrpanel reveal">
-        <span class="eyebrow">Scan Me</span>
-        <h3>Save My Contact</h3>
-        <p>Point your phone camera at the code. Save my card in one tap.</p>
-        <div class="qrwrap">
-          <span class="corner tl"></span><span class="corner tr"></span>
-          <span class="corner bl"></span><span class="corner br"></span>
-          <div id="qr"></div>
+      <!-- CONTACT -->
+      <section id="contact" class="sect" style="scroll-margin-top:20px;">
+        <div class="sect__label reveal"><i></i> 05 · Contact</div>
+        <h2 class="sect__title reveal">Contact details</h2>
+        <div class="contact__wrap">
+          <div class="clist reveal">
+            <a class="crow" href="tel:+966563111981"><span class="crow__ic"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"/></svg></span><div><div class="crow__l">Telephone · Saudi Arabia</div><div class="crow__v">+966 56 311 1981</div></div></a>
+            <a class="crow" href="tel:+966560849947"><span class="crow__ic"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"/></svg></span><div><div class="crow__l">Telephone · Saudi Arabia</div><div class="crow__v">+966 56 084 9947</div></div></a>
+            <a class="crow" href="tel:+971521181190"><span class="crow__ic"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"/></svg></span><div><div class="crow__l">Telephone · UAE</div><div class="crow__v">+971 52 118 1190</div></div></a>
+            <a class="crow" href="mailto:bsanogo@rpa.gov.sa"><span class="crow__ic"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm8 7L4 6.5V6l8 4.5L20 6v.5L12 11z"/></svg></span><div><div class="crow__l">Email</div><div class="crow__v">bsanogo@rpa.gov.sa</div></div></a>
+            <a class="crow" href="mailto:b.sanogo19@gmail.com"><span class="crow__ic"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm8 7L4 6.5V6l8 4.5L20 6v.5L12 11z"/></svg></span><div><div class="crow__l">Email</div><div class="crow__v">b.sanogo19@gmail.com</div></div></a>
+            <div class="crow"><span class="crow__ic"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg></span><div><div class="crow__l">Location</div><div class="crow__v">Riyadh, Saudi Arabia</div></div></div>
+          </div>
+          <div class="qrpanel reveal">
+            <h3>Contact card</h3>
+            <p>Scan to save the contact details.</p>
+            <div class="qrwrap">
+              <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+              <div id="qr"></div>
+            </div>
+            <a class="openlink" id="openBtn" href="card.html">
+              <svg viewBox="0 0 24 24"><path d="M14 3v2h3.6l-9.8 9.8 1.4 1.4L19 6.4V10h2V3h-7zM5 5h5V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-5h-2v5H5V5z"/></svg>
+              Open contact card
+            </a>
+          </div>
         </div>
-        <div class="hint">
-          <svg viewBox="0 0 24 24"><path d="M4 4h6v2H6v4H4V4zm10 0h6v6h-2V6h-4V4zM4 14h2v4h4v2H4v-6zm16 0v6h-6v-2h4v-4h2zM8 8h8v8H8V8z"/></svg>
-          No app needed. Just your camera.
-        </div>
-        <a class="openlink" id="openBtn" href="card.html">
-          <svg viewBox="0 0 24 24"><path d="M14 3v2h3.6l-9.8 9.8 1.4 1.4L19 6.4V10h2V3h-7zM5 5h5V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-5h-2v5H5V5z"/></svg>
-          Open My Card
-        </a>
-      </div>
+      </section>
+
+      <footer class="foot">
+        <p>© <span id="yr">2026</span> Brahema Sanogo · Corporate Chef, Royal Private Affairs · Riyadh, Kingdom of Saudi Arabia</p>
+      </footer>
+
     </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="wrap">
-      <div class="foot__grid">
-        <div class="foot__brand">
-          <a href="#top" class="logo">
-            <svg viewBox="0 0 40 40"><rect width="40" height="40" rx="11" fill="#33452a"/><path d="M13 20a5 5 0 1 1 1.9-9.6 5.6 5.6 0 0 1 10.2 0A5 5 0 1 1 27 20v2H13z" fill="#d99a34"/><rect x="13" y="22" width="14" height="7" rx="1.5" fill="#c15a34"/><path d="M17 24v3M20 24v3M23 24v3" stroke="#33452a" stroke-width="1.4" stroke-linecap="round"/></svg>
-            <span class="logo__txt"><b>Chef Sanogo</b><small>Private Chef</small></span>
-          </a>
-          <p>Good food, cooked in your home.</p>
-        </div>
-        <div class="foot__links">
-          <a href="https://wa.me/966563111981" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.5 15.3L2 22l4.8-1.5A10 10 0 1012 2zm4.3 12.6c-.2-.1-1.3-.7-1.5-.7-.2-.1-.3-.1-.5.1s-.5.7-.7.8c-.1.2-.2.2-.4.1a6.5 6.5 0 01-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4 0-.1-.5-1.2-.6-1.6-.2-.4-.4-.4-.5-.4h-.5c-.1 0-.4.1-.6.3-.2.3-.8.8-.8 1.9s.8 2.2.9 2.4c.1.1 1.6 2.5 4 3.4 1.4.6 2 .7 2.6.6.4 0 1.3-.5 1.5-1 .2-.6.2-1 .1-1.1z"/></svg></a>
-          <a href="https://instagram.com/chef_sanogo_b" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2c2.7 0 3 0 4.1.1 1 0 1.7.2 2.3.5.6.2 1.1.5 1.6 1s.8 1 1 1.6c.3.6.4 1.3.5 2.3.1 1.1.1 1.4.1 4.1s0 3-.1 4.1c0 1-.2 1.7-.5 2.3-.2.6-.5 1.1-1 1.6s-1 .8-1.6 1c-.6.3-1.3.4-2.3.5-1.1.1-1.4.1-4.1.1s-3 0-4.1-.1c-1 0-1.7-.2-2.3-.5-.6-.2-1.1-.5-1.6-1s-.8-1-1-1.6c-.3-.6-.4-1.3-.5-2.3C2.4 15 2.4 14.7 2.4 12s0-3 .1-4.1c0-1 .2-1.7.5-2.3.2-.6.5-1.1 1-1.6s1-.8 1.6-1c.6-.3 1.3-.4 2.3-.5C9 2 9.3 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zM17.8 6.9a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/></svg></a>
-          <a href="mailto:b.sanogo19@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm8 7L4 6.5V6l8 4.5L20 6v.5L12 11z"/></svg></a>
-        </div>
-      </div>
-      <div class="foot__bottom">© <span id="yr">2026</span> Chef Sanogo Brahema · Corporate Chef, Royal Private Affairs · Riyadh, Saudi Arabia</div>
-    </div>
-  </footer>
-
-  <div class="toast" id="toast"></div>
+  </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <script>
     document.getElementById('yr').textContent = new Date().getFullYear();
 
-    const io = new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+    const io = new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.14});
     document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
-    // Floating capsule nav on scroll
     (function(){
-      const nav=document.querySelector('header.nav');
-      const onScroll=()=>nav.classList.toggle('float',window.scrollY>36);
-      onScroll();
-      window.addEventListener('scroll',onScroll,{passive:true});
+      const links=[...document.querySelectorAll('.snav a')];
+      const map=new Map(links.map(a=>[a.dataset.sec,a]));
+      const secs=[...document.querySelectorAll('main section[id]')];
+      const spy=new IntersectionObserver((es)=>{
+        es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.remove('active'));const a=map.get(e.target.id);if(a)a.classList.add('active');}});
+      },{rootMargin:'-45% 0px -50% 0px',threshold:0});
+      secs.forEach(s=>spy.observe(s));
     })();
 
     (function(){
-      const t=document.getElementById('navToggle'), m=document.getElementById('navLinks'), o=document.getElementById('navOverlay');
-      const setOpen=(open)=>{
-        t.classList.toggle('open',open); m.classList.toggle('open',open); o.classList.toggle('open',open);
-        t.setAttribute('aria-expanded',open); t.setAttribute('aria-label',open?'Close menu':'Open menu');
-        document.body.style.overflow=open?'hidden':'';
-      };
-      t.addEventListener('click',()=>setOpen(!m.classList.contains('open')));
-      o.addEventListener('click',()=>setOpen(false));
-      m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setOpen(false)));
-      window.addEventListener('resize',()=>{if(window.innerWidth>840)setOpen(false);});
+      const b=document.getElementById('sbMenu'), n=document.getElementById('snav');
+      b.addEventListener('click',()=>{const open=n.classList.toggle('open');b.classList.toggle('open',open);b.setAttribute('aria-expanded',open);});
+      n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');b.classList.remove('open');}));
     })();
 
     const CARD_URL = location.protocol.startsWith('http')
       ? location.href.split('#')[0].replace(/[^/]*$/, '') + 'card.html'
       : 'card.html';
-    new QRCode(document.getElementById('qr'), {
-      text: CARD_URL, width: 440, height: 440,
-      colorDark: '#26331f', colorLight: '#ffffff', correctLevel: QRCode.CorrectLevel.H
-    });
+    new QRCode(document.getElementById('qr'), {text: CARD_URL, width: 352, height: 352, colorDark: '#1e2a1b', colorLight: '#ffffff', correctLevel: QRCode.CorrectLevel.H});
     document.getElementById('openBtn').href = CARD_URL;
   </script>
 </body>

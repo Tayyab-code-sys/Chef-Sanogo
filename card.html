@@ -82,10 +82,6 @@
         <span class="row__ic"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"/></svg></span>
         <span class="row__txt"><span class="row__label">Telephone · Saudi Arabia</span><span class="row__value">+966 56 084 9947</span></span>
       </a>
-      <a class="row" href="tel:+971521181190">
-        <span class="row__ic"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"/></svg></span>
-        <span class="row__txt"><span class="row__label">Telephone · UAE</span><span class="row__value">+971 52 118 1190</span></span>
-      </a>
       <a class="row" href="mailto:bsanogo@rpa.gov.sa">
         <span class="row__ic"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm8 7L4 6.5V6l8 4.5L20 6v.5L12 11z"/></svg></span>
         <span class="row__txt"><span class="row__label">Email</span><span class="row__value">bsanogo@rpa.gov.sa</span></span>
@@ -115,7 +111,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <script>
     const toast=m=>{const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),2600);};
-    const vcard=['BEGIN:VCARD','VERSION:3.0','N:Sanogo;Brahema;;;','FN:Brahema Sanogo','ORG:Royal Private Affairs','TITLE:Corporate Chef','TEL;TYPE=CELL,VOICE:+966563111981','TEL;TYPE=CELL,VOICE:+966560849947','TEL;TYPE=CELL,VOICE:+971521181190','EMAIL;TYPE=WORK:bsanogo@rpa.gov.sa','EMAIL;TYPE=HOME:b.sanogo19@gmail.com','ADR;TYPE=WORK:;;;Riyadh;;;Saudi Arabia','NOTE:Corporate Chef, Royal Private Affairs, Riyadh. Over 20 years of professional experience.','END:VCARD'].join('\r\n');
+    const vcard=['BEGIN:VCARD','VERSION:3.0','N:Sanogo;Brahema;;;','FN:Brahema Sanogo','ORG:Royal Private Affairs','TITLE:Corporate Chef','TEL;TYPE=CELL,VOICE:+966563111981','TEL;TYPE=CELL,VOICE:+966560849947','EMAIL;TYPE=WORK:bsanogo@rpa.gov.sa','EMAIL;TYPE=HOME:b.sanogo19@gmail.com','ADR;TYPE=WORK:;;;Riyadh;;;Saudi Arabia','NOTE:Corporate Chef, Royal Private Affairs, Riyadh. Over 20 years of professional experience.','END:VCARD'].join('\r\n');
     document.getElementById('saveBtn').addEventListener('click',()=>{const b=new Blob([vcard],{type:'text/vcard;charset=utf-8'});const u=URL.createObjectURL(b);const a=document.createElement('a');a.href=u;a.download='Brahema-Sanogo.vcf';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1500);toast('Opening contact card…');});
     document.getElementById('downloadBtn').addEventListener('click',async()=>{const c=document.getElementById('card');toast('Generating image…');try{const cv=await html2canvas(c,{backgroundColor:'#131c11',scale:Math.max(3,devicePixelRatio||1),useCORS:true});cv.toBlob(bl=>{const u=URL.createObjectURL(bl);const a=document.createElement('a');a.href=u;a.download='Brahema-Sanogo.png';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1500);toast('Saved to your device ✓');},'image/png');}catch(e){toast('Could not generate image');console.error(e);}});
   </script>
